@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Page</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="container">
+  <header id="header" class="text-center">
+    <h1 id="title">helpmelearn Survey Form</h1>
+    <p id="description" class="description">Thank you for filling this form, this will help us improve our service.</p>
+  </header>
+
+  <section class="section">
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" class="form-control" placeholder="Name" required>
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" class="form-control" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <label for="age" id="number-label">Age</label>
+        <input type="number" id="number" class="form-control" type="number" min="7" max="60" placeholder="Age">
+      </div>
+
+      <div class="form-group">
+        <p>On which catagory do you find yourself in?</p>
+        <select name="current-role" id="dropdown" class="form-control">
+          <option disabled selected value>You are a...</option>
+          <option value="student">Student</option>
+          <option value="teacher">Teacher</option>
+          <option value="employee">Full time employee</option>
+          <option value="others">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Do you find our program helpful</p>
+        <label for="definitely">
+          <input type="radio" id="definitely" name="helpful" value="yes" checked>Definitely
+        </label>
+        <label for="yesbut">
+          <input type="radio" id="yesbut" value="yes with improvement" name="helpful">Yes but it needs some improvement
+        </label>
+        <label for="no">
+          <input type="radio" id="no" name="helpful" value="no">Not at all
+        </label>
+      </div>
+
+      <div class="form-group">
+
+        <p>Which parts need improvement?</p>
+
+        <label for="checkbox">
+          <input type="checkbox"
+          class="input-checkbox"
+          name="improve" 
+          value="section-1">Section-1
+          </label>
+
+        <label for="checkbox">
+          <input type="checkbox" 
+          class="input-checkbox" 
+          name="improve" 
+          value="section-2">Section-2
+        </label>
+
+        <label for="checkbox">
+          <input type="checkbox" 
+          class="input-checkbox" 
+          name="improve" 
+          value="section-3">Section-3
+        </label>
+
+        <label for="checkbox">
+          <input type="checkbox" 
+          class="input-checkbox" 
+          name="improve" 
+          value="section-4">Section-4
+        </label>
+
+        <label for="checkbox">
+          <input type="checkbox" 
+          class="input-checkbox" 
+          name="improve" 
+          value="section-5">Section-5
+        </label>
+
+        <label for="checkbox">
+          <input type="checkbox" 
+          class="input-checkbox" 
+          name="improve" 
+          value="section-6">Section-6
+        </label>
+
+        <label for="checkbox">
+          <input type="checkbox" 
+          class="input-checkbox" 
+          name="improve" 
+          value="section-7">Section-7
+        </label>
+
+        <label for="checkbox">
+          <input type="checkbox" 
+          class="input-checkbox" 
+          name="improve" 
+          value="section-8">Section-8
+        </label>
+      </div>
+       
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea
+        id="comments"
+        name="comment"
+        placeholder="Enter your comment here..."
+        class="input-textarea"
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+
+    </form>
+  </section>
+
+  
+</div>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
